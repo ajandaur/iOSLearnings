@@ -7,6 +7,7 @@
 
 import Foundation
 import RealmSwift
+import SwiftUI
 
 class ToDo: Object, ObjectKeyIdentifiable {
     // Use primary key for upserting an object
@@ -29,6 +30,30 @@ class ToDo: Object, ObjectKeyIdentifiable {
             case .urgent:
                 return "Urgent"
             }
+        }
+        
+        var color: Color {
+            switch self {
+            case .trivial:
+                return .teal
+            case .neutral:
+                return .secondary
+            case .urgent:
+                return .red
+            }
+        }
+
+    }
+    
+    
+    func increment() -> Urgency {
+        switch urgency {
+        case .trivial:
+            return .neutral
+        case .neutral:
+            return .urgent
+        case .urgent:
+            return .trivial
         }
     }
     

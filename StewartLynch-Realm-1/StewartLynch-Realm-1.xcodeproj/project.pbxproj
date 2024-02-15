@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873F452A2B7D7FF80090E8D4 /* ToDoListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F45292B7D7FF80090E8D4 /* ToDoListRow.swift */; };
 		879873D02B7B09B30011D230 /* StewartLynch_Realm_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879873CF2B7B09B30011D230 /* StewartLynch_Realm_1App.swift */; };
-		879873D22B7B09B30011D230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879873D12B7B09B30011D230 /* ContentView.swift */; };
+		879873D22B7B09B30011D230 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879873D12B7B09B30011D230 /* ToDoListView.swift */; };
 		879873D42B7B09B30011D230 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879873D32B7B09B30011D230 /* Item.swift */; };
 		879873D62B7B09B50011D230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879873D52B7B09B50011D230 /* Assets.xcassets */; };
 		879873D92B7B09B50011D230 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879873D82B7B09B50011D230 /* Preview Assets.xcassets */; };
@@ -19,9 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		873F45292B7D7FF80090E8D4 /* ToDoListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRow.swift; sourceTree = "<group>"; };
 		879873CC2B7B09B30011D230 /* StewartLynch-Realm-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StewartLynch-Realm-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		879873CF2B7B09B30011D230 /* StewartLynch_Realm_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StewartLynch_Realm_1App.swift; sourceTree = "<group>"; };
-		879873D12B7B09B30011D230 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		879873D12B7B09B30011D230 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		879873D32B7B09B30011D230 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		879873D52B7B09B50011D230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		879873D82B7B09B50011D230 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		873F45282B7D7FE50090E8D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				879873D12B7B09B30011D230 /* ToDoListView.swift */,
+				873F45292B7D7FF80090E8D4 /* ToDoListRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		879873C32B7B09B30011D230 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +74,9 @@
 		879873CE2B7B09B30011D230 /* StewartLynch-Realm-1 */ = {
 			isa = PBXGroup;
 			children = (
+				873F45282B7D7FE50090E8D4 /* Views */,
 				879873E62B7B10E60011D230 /* Models */,
 				879873CF2B7B09B30011D230 /* StewartLynch_Realm_1App.swift */,
-				879873D12B7B09B30011D230 /* ContentView.swift */,
 				879873D32B7B09B30011D230 /* Item.swift */,
 				879873D52B7B09B50011D230 /* Assets.xcassets */,
 				879873DF2B7B109D0011D230 /* AppIcon.appiconset */,
@@ -168,7 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879873D22B7B09B30011D230 /* ContentView.swift in Sources */,
+				879873D22B7B09B30011D230 /* ToDoListView.swift in Sources */,
+				873F452A2B7D7FF80090E8D4 /* ToDoListRow.swift in Sources */,
 				879873D42B7B09B30011D230 /* Item.swift in Sources */,
 				879873D02B7B09B30011D230 /* StewartLynch_Realm_1App.swift in Sources */,
 				879873E82B7B10EF0011D230 /* ToDo.swift in Sources */,

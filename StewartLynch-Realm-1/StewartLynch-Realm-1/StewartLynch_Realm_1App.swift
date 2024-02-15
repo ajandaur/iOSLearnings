@@ -10,23 +10,16 @@ import SwiftUI
 
 @main
 struct StewartLynch_Realm_1App: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+   
 
     var body: some Scene {
         WindowGroup {
             ToDoListView()
+                .onAppear {
+                    print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
+                    UserDefaults.standard.setValue(false, forKey: "_UIConstrainsBasedLayoutLogUnsatisfiable")
+                }
+            
         }
-        .modelContainer(sharedModelContainer)
     }
 }
