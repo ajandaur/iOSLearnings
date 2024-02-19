@@ -13,6 +13,7 @@ class Country: Object, ObjectKeyIdentifiable {
     @Persisted var name: String
     // each country has many cities
     @Persisted var cities: List<City> 
+    @Persisted var flag = "🏳️"
     
     convenience init(name: String) {
         self.init()

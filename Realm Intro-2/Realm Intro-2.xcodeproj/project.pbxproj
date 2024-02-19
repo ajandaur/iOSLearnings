@@ -12,9 +12,13 @@
 		873F45B32B7DBF360090E8D4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F45B22B7DBF360090E8D4 /* Country.swift */; };
 		873F45B62B7DBF6A0090E8D4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 873F45B52B7DBF6A0090E8D4 /* Realm */; };
 		873F45B82B7DBF6A0090E8D4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 873F45B72B7DBF6A0090E8D4 /* RealmSwift */; };
+		878AD7972B83E4B900D7F39B /* AllCitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878AD7962B83E4B900D7F39B /* AllCitiesListView.swift */; };
+		878AD7992B83E5C200D7F39B /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878AD7982B83E5C200D7F39B /* Migrator.swift */; };
+		878AD79B2B83E92200D7F39B /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878AD79A2B83E92200D7F39B /* CountryInfo.swift */; };
+		878AD79D2B83E93E00D7F39B /* FlagPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878AD79C2B83E93E00D7F39B /* FlagPicker.swift */; };
 		87E4344A2B83232900542323 /* CitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E434492B83232900542323 /* CitiesListView.swift */; };
 		BBE8C3A327D6772300FE1516 /* Realm_Intro_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE8C3A227D6772300FE1516 /* Realm_Intro_2App.swift */; };
-		BBE8C3A527D6772300FE1516 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE8C3A427D6772300FE1516 /* CountryListView.swift */; };
+		BBE8C3A527D6772300FE1516 /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE8C3A427D6772300FE1516 /* CountriesListView.swift */; };
 		BBE8C3A727D6772400FE1516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE8C3A627D6772400FE1516 /* Assets.xcassets */; };
 		BBE8C3AA27D6772400FE1516 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE8C3A927D6772400FE1516 /* Preview Assets.xcassets */; };
 		BBE8C3B127D677AC00FE1516 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE8C3B027D677AC00FE1516 /* Launch Screen.storyboard */; };
@@ -24,10 +28,14 @@
 		870685A42B8174A5004DECC8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		870685A72B830962004DECC8 /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
 		873F45B22B7DBF360090E8D4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		878AD7962B83E4B900D7F39B /* AllCitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCitiesListView.swift; sourceTree = "<group>"; };
+		878AD7982B83E5C200D7F39B /* Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
+		878AD79A2B83E92200D7F39B /* CountryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
+		878AD79C2B83E93E00D7F39B /* FlagPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagPicker.swift; sourceTree = "<group>"; };
 		87E434492B83232900542323 /* CitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListView.swift; sourceTree = "<group>"; };
 		BBE8C39F27D6772300FE1516 /* Realm Intro-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Realm Intro-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE8C3A227D6772300FE1516 /* Realm_Intro_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm_Intro_2App.swift; sourceTree = "<group>"; };
-		BBE8C3A427D6772300FE1516 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		BBE8C3A427D6772300FE1516 /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
 		BBE8C3A627D6772400FE1516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBE8C3A927D6772400FE1516 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBE8C3B027D677AC00FE1516 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -49,9 +57,11 @@
 		870685A62B818887004DECC8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BBE8C3A427D6772300FE1516 /* CountryListView.swift */,
+				BBE8C3A427D6772300FE1516 /* CountriesListView.swift */,
 				870685A72B830962004DECC8 /* CountryRowView.swift */,
 				87E434492B83232900542323 /* CitiesListView.swift */,
+				878AD7962B83E4B900D7F39B /* AllCitiesListView.swift */,
+				878AD79C2B83E93E00D7F39B /* FlagPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -61,6 +71,7 @@
 			children = (
 				873F45B22B7DBF360090E8D4 /* Country.swift */,
 				870685A42B8174A5004DECC8 /* City.swift */,
+				878AD79A2B83E92200D7F39B /* CountryInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +101,7 @@
 				BBE8C3A627D6772400FE1516 /* Assets.xcassets */,
 				BBE8C3B027D677AC00FE1516 /* Launch Screen.storyboard */,
 				BBE8C3A827D6772400FE1516 /* Preview Content */,
+				878AD7982B83E5C200D7F39B /* Migrator.swift */,
 			);
 			path = "Realm Intro-2";
 			sourceTree = "<group>";
@@ -180,11 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE8C3A527D6772300FE1516 /* CountryListView.swift in Sources */,
+				BBE8C3A527D6772300FE1516 /* CountriesListView.swift in Sources */,
 				87E4344A2B83232900542323 /* CitiesListView.swift in Sources */,
 				873F45B32B7DBF360090E8D4 /* Country.swift in Sources */,
 				870685A82B830962004DECC8 /* CountryRowView.swift in Sources */,
 				870685A52B8174A5004DECC8 /* City.swift in Sources */,
+				878AD79B2B83E92200D7F39B /* CountryInfo.swift in Sources */,
+				878AD7972B83E4B900D7F39B /* AllCitiesListView.swift in Sources */,
+				878AD79D2B83E93E00D7F39B /* FlagPicker.swift in Sources */,
+				878AD7992B83E5C200D7F39B /* Migrator.swift in Sources */,
 				BBE8C3A327D6772300FE1516 /* Realm_Intro_2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
